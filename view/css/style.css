@@ -1,0 +1,185 @@
+@font-face{
+    font-family: Geosans; 
+    src: url(../font/GeoSans/GeosansLight.ttf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Geosans;
+    font-weight: bold;
+}
+/* ESTRUTURA */
+#container{
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+#box{
+    width: 1380px;
+    height: 640px;
+    margin: auto;
+    background-color: #f4f4f4;
+}
+/* MODAL */
+#container_modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 999;
+    display: none;
+    top: 0;
+    text-align: center;
+}
+#modal{
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 30px;
+    display: inline-block;
+    background-color: white;
+}
+.img_close{
+    width:35px;
+    height: 35px;
+    margin-left: 420px;
+    margin-top: -50px;
+}
+/* INICIO - ALTERAR LINGUA */
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #3A7EA7;
+    padding-top: 5px;
+}
+#title_header{
+    width: 250px;
+    height: 80px;
+    background-color: #3A7EA7;
+    margin-left: auto;
+    margin-right: auto;
+}
+#title_header h1{
+    color: white;
+    text-align: center;
+    font-family: Geosans; 
+    font-weight: bold;
+}
+#bar_option{
+    width: 1000px;
+    height: 80px;
+    margin: auto;
+    background-color: #8CBBD7;
+    padding-top: 10px;
+}
+.btn_option{
+    width: 200px;
+    height: 40px;
+    background-color: #3A7EA7;
+    border-radius: 5px;
+    float: left;
+    margin-left: 150px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-family: Geosans; 
+    font-weight: bold;
+    font-size: 17px;     
+}
+#box_container{
+    width: 1000px;
+    height: 500px;
+    background-color: #f4f4f4;
+    margin: auto;
+    border: 1px solid black;
+    padding-top: 15px;
+}
+#box_table{
+    width: 900px;
+    height: 450px;
+    background-color: white;
+    margin: auto;
+    border: 1px solid black;
+    overflow: auto;
+}
+#btn_add{
+    width: 200px;
+    height: 40px;
+    background-color: #3A7EA7;
+    margin-left: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-family: Geosans; 
+    font-weight: bold;
+    font-size: 17px;
+    
+}
+#tbl_team{
+    width: 800px;
+    height: 384px;
+    border: solid 1px black;
+    margin: auto;
+    margin-top: 10px;
+}
+#tbl_player{
+    width: 800px;
+    height: 384px;
+    border: solid 1px black;
+    margin: auto;
+    margin-top: 10px;
+}
+.col_title{
+    width: 199px;
+    height: 35px;
+    border: solid 1px black;
+    float: left;
+    text-align: center;
+    
+    color: black;
+    
+}
+.col_title img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    
+}
+.title_line{
+    width: 800px;
+    height: 35px;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: #f4f4f4;
+    margin: auto;
+    color: grey;
+}
+h4{
+    margin-left: 380px;
+    font-size: 15px;
+}
+/* FORM EDIT */
+
+.input{
+    width: 440px;
+    height: 40px;
+    background-color: #dcdcdc;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    color: #000;
+}
+
+
+
