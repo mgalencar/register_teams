@@ -52,6 +52,7 @@
         public function list_team(){
             
             $consult = $this->teamDao->selectAll();
+           
             return $consult;
         }    
         public function search_team(){

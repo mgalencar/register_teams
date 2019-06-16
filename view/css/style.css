@@ -76,7 +76,7 @@ header{
     padding-top: 10px;
 }
 .btn_option{
-    width: 200px;
+    width: 150px;
     height: 40px;
     background-color: #3A7EA7;
     border-radius: 5px;
@@ -106,7 +106,7 @@ header{
     overflow: auto;
 }
 #btn_add{
-    width: 200px;
+    width: 150px;
     height: 40px;
     background-color: #3A7EA7;
     margin-left: 50px;
@@ -140,7 +140,6 @@ header{
     border: solid 1px black;
     float: left;
     text-align: center;
-    
     color: black;
     
 }
@@ -153,7 +152,11 @@ header{
     
 }
 .title_line{
-    width: 800px;
+    width: 639px;
+    height: 35px;
+}
+.title_line_trainer{
+    width: 639px;
     height: 35px;
 }
 footer{

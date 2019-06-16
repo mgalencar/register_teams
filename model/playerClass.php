@@ -2,6 +2,7 @@
 
 class Player{
 
+    
     private $id_player;
     private $name_player;
     private $last_name_player;

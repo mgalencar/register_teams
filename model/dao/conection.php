@@ -6,10 +6,12 @@ class Connection{
     private $user;
     private $password;
     private $database;
+
     public function __construct(){
+        
         $this->server = 'localhost';
         $this->user = 'root';
-        $this->password = '';
+        $this->password = 'Senai@127131';
         $this->database = 'db_register_teams';
     }
     public function connect_database(){

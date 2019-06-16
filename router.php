@@ -13,6 +13,7 @@ if(isset($_REQUEST['controller'])){
         
         require_once('controller/controller_team.php');
         $controller_team = new ControllerTeam();
+        
         switch($modo){
                 case 'INSERT_TEAM':
                     $controller_team->insert_team();
@@ -38,29 +39,52 @@ if(isset($_REQUEST['controller'])){
         case "PLAYER":
           
             require_once('controller/controller_player.php');
+            
             $controller_player = new ControllerPlayer();
 
             switch($modo){
                 case 'INSERT_PLAYER':
-                   
                     $controller_player->insert_player();
                     break;
+
                 case "UPDATE_PLAYER":
                     $controller_player->update_player();
                     break;
+
                 case "DELETE_PLAYER":
                     $controller_player->delete_player();
                     break;
+
                 case "SELECT_ALL_PLAYER":
                     $list_player = $controller_player->list_player();
                     require_once('view/reg_player_form/table_player.php');
                     break;
+
                 case "SELECT_BY_ID":
                     $player = $controller_player->search_player();
                     require_once('view/reg_player_form/reg_player.php');
                     break;
             }
             break;
+
+            case "TRAINER":
+
+            require_once('controller/controller_trainer.php');
+            $controller_trainer = new ControllerTrainer();
+            // o que é o modo?
+            switch($modo){
+                case 'INSERT_TRAINER':
+
+                // PRECISO CHAMAR OS MÉTODOS CRIADOS NA CONTROLLER
+
+
+
+
+            }
+
+
+
+
     }
 }
 ?>

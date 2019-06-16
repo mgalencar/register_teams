@@ -64,6 +64,7 @@ class PlayerDao{
         $list_player = array();
 
         while($rs_player = $select->fetch(PDO::FETCH_ASSOC)){
+            
             $player = new Player();
             $player->setId_player($rs_player['id_player']);
             $player->setName_player($rs_player['name_player']);

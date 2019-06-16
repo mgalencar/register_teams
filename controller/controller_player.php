@@ -5,8 +5,9 @@
         private $player;
 
         public function __construct(){
+            
             $path = $_SERVER['DOCUMENT_ROOT'];
-            // importing classes 
+            // importing classes. 
             require_once($path.'/register_teams/model/dao/playerDAO.php');
             require_once($path.'/register_teams/model/playerClass.php');
             

@@ -135,6 +135,40 @@ function search_player(controller, modo, id_player){
         }
     })
 }
+// TRAINER
+$(document).ready(function(){
+    $("#btn_trainer").click(function(){ 
+        list_trainer();
+    });
+});
+function list_trainer(){
+    $.ajax({
+        type: "GET",
+        url: "view/reg_trainer_form/table_trainer.php",
+        success: function(callback){
+            $("#box_container").html(callback)
+        } 
+    });
+}
+function insert_trainer(){
+    form = $("#form_trainer");
+    event.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: form.attr('action'),
+        data: form.serialize(),
+        success: function(callback){
+            console.log(callback);
+            list_trainer();
+            close_modal();
+        }
+    });
+}
+
+
+
+
+
 
 function show_modal_team(){
 
@@ -157,6 +191,17 @@ function show_modal_player(){
         }
     });
 }
+function show_modal_trainer(){
+    $("#container_modal").fadeIn();
+    $.ajax({
+        type: "GET",
+        url: "view/reg_trainer_form/reg_trainer.php",
+        success: function(callback){
+            $("#modal").html(callback)
+        }
+    });
+}
+
 function close_modal(){
     $("#container_modal").fadeOut();
 

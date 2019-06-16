@@ -21,6 +21,7 @@
         </div>
         <?php
             $path = $_SERVER['DOCUMENT_ROOT'];
+                            
             require_once($path.'/register_teams/controller/controller_team.php');
             
             $controller_team = new ControllerTeam();

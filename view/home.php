@@ -30,6 +30,9 @@
                     <div class="btn_option" id="btn_player">
                         <a>Cadastrar Jogador</a>
                     </div>
+                    <div class="btn_option" id="btn_trainer">
+                        <a>Cadastrar Treinador</a>
+                    </div>
                 </div>
             </nav>
             <!-- div que recebe o conteudo -->
